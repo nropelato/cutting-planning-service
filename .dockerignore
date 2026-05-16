@@ -1,0 +1,28 @@
+# Version control
+.git
+.gitignore
+
+# Python cache
+__pycache__
+*.py[cod]
+*.pyo
+.pytest_cache
+.mypy_cache
+.ruff_cache
+
+# Tests (not needed in production image)
+tests/
+pytest.ini
+
+# Environment files (injected at runtime)
+.env
+.env.*
+!.env.example
+
+# Docs
+*.md
+
+# IDE
+.vscode
+.idea
+*.swp
