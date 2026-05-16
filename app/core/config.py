@@ -5,10 +5,13 @@ class Settings(BaseSettings):
     API_KEY: str = "super_secret_dev_key_change_in_production"
     ALLOWED_CORS_ORIGINS: str = "http://localhost:3000,http://localhost:5173"
     
-    # Engine Architectural Constraints
+    # Engine Architectural & Physical Constraints
     MAX_PATTERNS: int = 3
     MAX_PLY_LIMIT: int = 100
     SOLVER_TIME_LIMIT_SECONDS: float = 30.0
+    MAX_TABLE_LENGTH_CM: int = 800
+    FABRIC_WIDTH_CM: int = 180
+    NESTING_EFFICIENCY: float = 0.85
     
     # Financial-Industrial TCO Parameters
     LAYER_SPREADING_COST: float = 15.00     # Pegged to labor minutes

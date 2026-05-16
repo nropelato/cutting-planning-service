@@ -5,12 +5,12 @@ class ProductionConfig:
     """
     Industrial parameters for the cutting room.
     """
-    MAX_PATTERNS = 3                 
-    MAX_PLY_LIMIT = 100              
-    SOLVER_TIME_LIMIT_SECONDS = 30.0 
-    MAX_TABLE_LENGTH_CM = 800        
-    FABRIC_WIDTH_CM = 180            
-    NESTING_EFFICIENCY = 0.85        
+    MAX_PATTERNS = settings.MAX_PATTERNS
+    MAX_PLY_LIMIT = settings.MAX_PLY_LIMIT
+    SOLVER_TIME_LIMIT_SECONDS = settings.SOLVER_TIME_LIMIT_SECONDS
+    MAX_TABLE_LENGTH_CM = settings.MAX_TABLE_LENGTH_CM
+    FABRIC_WIDTH_CM = settings.FABRIC_WIDTH_CM
+    NESTING_EFFICIENCY = settings.NESTING_EFFICIENCY
     
     # Area in cm2 for a FULL garment
     AREA_PER_SIZE_CM2 = {
